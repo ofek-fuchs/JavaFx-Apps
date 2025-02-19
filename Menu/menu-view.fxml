@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="parentBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menu.MenuController">
+   <children>
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="238.0" text="Menu" />
+      <ScrollPane fitToWidth="true" prefHeight="510.0" prefWidth="400.0">
+         <content>
+            <VBox fx:id="mainVbox" prefHeight="518.0" prefWidth="900.0">
+               <children>
+                  <TextField alignment="CENTER" editable="false" text="Starters" />
+                  <VBox fx:id="startBox" alignment="TOP_CENTER" prefHeight="76.0" prefWidth="385.0" />
+                  <TextField alignment="CENTER" editable="false" text="Main Course" />
+                  <VBox fx:id="maincourseBox" prefHeight="80.0" prefWidth="385.0" />
+                  <TextField alignment="CENTER" editable="false" text="Desserts" />
+                  <VBox fx:id="dessertBox" prefHeight="86.0" prefWidth="385.0" />
+                  <TextField alignment="CENTER" editable="false" text="To Drink" />
+                  <VBox fx:id="drinkBox" prefHeight="84.0" prefWidth="385.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox prefHeight="48.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="totalCost" editable="false" />
+            <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="79.0" text="Total " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="400.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#orderPressed" text="הזמן" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
