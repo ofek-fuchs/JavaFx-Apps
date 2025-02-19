@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reminderapp.ReminderController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Reminders" />
+   <HBox prefHeight="55.0" prefWidth="560.0" spacing="50.0">
+      <children>
+         <ComboBox fx:id="dayBox" prefWidth="150.0" />
+         <ComboBox fx:id="monthBox" prefWidth="150.0" />
+         <ComboBox fx:id="yearBox" prefWidth="150.0" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="560.0" spacing="50.0">
+      <children>
+         <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveClicked" prefHeight="30.0" prefWidth="100.0" text="Save" />
+         <Button fx:id="loadButton" mnemonicParsing="false" onAction="#loadClicked" prefHeight="30.0" prefWidth="100.0" text="Load" />
+      </children>
+   </HBox>
+   <TextArea fx:id="textArea" prefHeight="306.0" prefWidth="560.0" />
+</VBox>
